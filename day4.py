@@ -10,5 +10,6 @@ print("BYe")
 print("This is a t\tab space ")
 print("for backslash use'\\' for Cat\\Kitten ")
 print('Rupesh\'s father is a Farmer')
+#\r Carriage return 
 print("Loading...\rDone!")
 print("Hello\rWorld")
