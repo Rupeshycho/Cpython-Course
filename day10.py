@@ -98,7 +98,7 @@ def type_casting3():
     print("===== PYTHON TYPECASTING FULL DEMO =====\n")
 
 
-    # 1️ IMPLICIT TYPECASTING (Automatic)
+    #  1 IMPLICIT TYPECASTING (Automatic)
 
 
     print("1. IMPLICIT TYPECASTING")
@@ -126,7 +126,7 @@ def type_casting3():
     print("\n" + "-"*40 + "\n")
 
 
-    # 2️ EXPLICIT TYPECASTING (Manual)
+    # 2 EXPLICIT TYPECASTING (Manual)
 
 
     print("2. EXPLICIT TYPECASTING")
@@ -149,7 +149,7 @@ def type_casting3():
     print("\n" + "-"*40 + "\n")
 
 
-    # 3️TYPECASTING WITH COLLECTIONS
+    # 3 TYPECASTING WITH COLLECTIONS
 
 
     print("3. TYPECASTING WITH COLLECTIONS")
