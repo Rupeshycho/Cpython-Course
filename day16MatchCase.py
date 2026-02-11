@@ -25,7 +25,7 @@ def days():
             print("7. End of the Week !!! ")    
         case _ :
             print(" Midweek Days, Work. ")    
-days() 
+
 
 def stages():
     print("Stages of Life".center(40,"="))
@@ -54,8 +54,27 @@ def stages():
         break
     
     
-          
-          
-                
+        
+   
+days() 
 matchCase()
 stages()
+
+
+
+
+
+# pick a random fruit
+def fruits():
+    fruit = random.choice(["apple", "banana", "mango", "orange"])
+
+    print(f"Selected fruit: {fruit}")
+
+    match fruit:
+        case "apple" | "banana" | "orange":
+            print("This is a common fruit.")
+        case "mango":
+            print("Tropical fruit!")
+        case _:
+            print("Unknown fruit.")
+fruits()            
