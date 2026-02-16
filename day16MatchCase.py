@@ -57,12 +57,13 @@ def stages():
         
    
 days() 
+print('\n')
+
 matchCase()
+print('\n')
+
 stages()
-
-
-
-
+print("\n")
 
 # pick a random fruit
 def fruits():
