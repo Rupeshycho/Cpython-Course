@@ -33,3 +33,27 @@ print("Hello\nFriends".splitlines()) #['Hello', 'Friends']
 a =input("Email Address: ")
 div=a.partition("@")
 print(f'Your name is: {div[0].title()}')
+
+
+
+
+
+import re
+
+def validate_email(email):
+    # Simple regex for basic email validation
+    # pattern = r'^[a-zA-Z0-9]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    pattern=r'^[a-zA-Z0-9]+@[a-z.]+\.[a-z]{2,}$'
+    
+    if re.match(pattern, email):
+        return True
+    else:
+        raise ValueError("Invalid email format!")
+
+# Example usage
+try:
+    email = input("Enter your email: ")
+    if validate_email(email):
+        print("Email is valid ✅")
+except:
+    print(f"Error: {ValueError}")
