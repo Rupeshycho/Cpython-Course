@@ -27,3 +27,5 @@ for k in range(1,6):
 for k in range(1,9,2):
     print(k, "is a odd number betweern 1 and 9")
     
+
+    

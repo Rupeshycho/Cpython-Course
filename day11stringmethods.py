@@ -42,8 +42,8 @@ import re
 
 def validate_email(email):
     # Simple regex for basic email validation
-    # pattern = r'^[a-zA-Z0-9]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-    pattern=r'^[a-zA-Z0-9]+@[a-z.]+\.[a-z]{2,}$'
+    pattern = r'^[a-zA-Z0-9]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    # pattern=r'^[a-zA-Z0-9]+@[a-z.]+\.[a-z]{2,}$'
     
     if re.match(pattern, email):
         return True
@@ -57,3 +57,26 @@ try:
         print("Email is valid ✅")
 except:
     print(f"Error: {ValueError}")
+    
+import re
+
+
+
+def validate_email2(email):
+    # Stricter regex to prevent consecutive dots or starting/ending dots in domain
+    pattern = r'^[a-zA-Z0-9]+@([a-z]+(\.[a-z]+)+)$'
+    
+    if re.match(pattern, email):
+        return True
+    else:
+        raise ValueError("Invalid email! Please enter a valid email (e.g., user@gmail.com)")
+
+# loop running until its valid 
+while True:
+    try:
+        email = input("Enter your email: ")
+        if validate_email2(email):
+            print("Email is valid ✅")
+            break  # exit the loop if valid
+    except ValueError as e:
+        print(e)
