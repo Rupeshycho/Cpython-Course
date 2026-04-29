@@ -1,13 +1,13 @@
-# import encoding
-# import decodestring()
-# encoded = "Rupesh".encode("ASCII")
-# print(encoded)
+import encoding
+import decodestring()
+encoded = "Rupesh".encode("ASCII")
+print(encoded)
 
 
 
-# #input
-# encod=input("Enter the string: ")
-# print(encod.encode("ASCII"))
+#input
+encod=input("Enter the string: ")
+print(encod.encode("ASCII"))
 
 
 text="Hello Rupesh"
