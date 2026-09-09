@@ -47,7 +47,8 @@ print(s)
 
 setA = {"Rupes", "Anju", "Arjun"}
 setB={"Rupes", "Anju", "Yadav"}
-# print(setA.union(setB))
-setc=setA.copy()+setB.copy()
+print(setA.union(setB))
+#+ does not work in sets 
+setc=setA.copy()|setB.copy()
 print(setc)
 

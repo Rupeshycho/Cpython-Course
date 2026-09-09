@@ -37,7 +37,24 @@ print(info2['car'], "car has the mode ",info2["model"])
 # 3. to get all keys of dictionary:  dict1.keys()
 # 4. to get all the values of dictionary: dict1.values()
 # 5. to get all the pairs : dict1.items()
-# 6. dict1['']
+# 6. dict1['key'] gives the value for the respective key but 
+# info.get("key") also return the value but doesnot throw an error if not found 
 
 
+dict= {
+    "name": "Anju", 
+    "class": 13,
+    'roll': 12
+    }
+print(dict.items())
+print("The Roll No.:", dict['roll'])
+print(dict.get('roll'))
+print(dict.keys())
 
+for key in dict.keys(): 
+    print('The value corresponding to the ',key, 'is', dict[key])
+
+
+for key, value in dict.items(): 
+    print(f'The value corresponding to the {key} is {value}')
+    
